@@ -1,0 +1,114 @@
+/* Reset general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Estilo del contenedor principal */
+#general {
+    width: 1200px;
+    margin: 20px auto;
+    border: 5px solid black;
+}
+
+/* Estilo de la cabecera */
+header {
+    height: 100px;
+    text-align: center;
+    line-height: 100px; /* Centrado vertical */
+    background-color: rgb(50, 50, 200);
+    color: wheat;
+}
+
+/* Menú de navegación */
+#menu {
+    background-color: #ccc;
+}
+
+#menu ul {
+    list-style-type: none; /* Eliminar estilo de lista */
+}
+
+#menu li {
+    float: left;
+    border-right: 1px solid #eee; /* Borde derecho */
+}
+
+#menu li a {
+    display: block;
+    padding: 15px;
+    text-decoration: none; /* Sin subrayado */
+}
+
+#menu li:hover {
+    background-color: rgb(50, 50, 200);
+}
+
+#menu li:hover a {
+    color: wheat; /* Color de texto al pasar el ratón */
+}
+
+/* Distribución del contenido */
+#contenido {
+    float: left;
+    width: 70%; /* 70% del ancho de #general */
+}
+
+#contenido h3 {
+    text-align: center;
+    padding: 15px;
+    color: #444;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); /* Sombra */
+}
+
+/* Estilo de cajas */
+.caja {
+    float: left;
+    width: 350px;
+    height: 250px;
+    margin: 20px 40px; /* 20px arriba/abajo, 40px izquierda */
+    border-radius: 5px; /* Radio de borde */
+    background-color: #eee;
+    box-shadow: 0 0 15px black; /* Sombra negra */
+    transition: background-color 300ms; /* Transición */
+}
+
+.caja h2 {
+    color: #444;
+}
+
+.caja:hover {
+    background-color: rgb(50, 50, 200);
+    cursor: pointer; /* Cursor pointer al pasar el ratón */
+}
+
+.caja:hover h2 {
+    color: wheat; /* Color de título en la caja al pasar el ratón */
+}
+
+/* Barra lateral */
+#lateral {
+    float: right;
+    width: 25%; /* 25% del ancho de #general */
+    min-height: 500px;
+    max-height: 1165px;
+    overflow-y: scroll; /* Desplazamiento vertical */
+    margin-top: 20px;
+    text-align: justify; /* Texto justificado */
+}
+
+/* Pie de página */
+footer {
+    clear: both; /* Para limpiar el flotado */
+    width: 100%;
+    height: 55px;
+    line-height: 55px; /* Centrado vertical */
+    text-align: center;
+    background-color: #eee;
+    border-top: 1px solid #ccc; /* Borde superior */
+}
